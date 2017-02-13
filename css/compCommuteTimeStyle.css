@@ -1,0 +1,20 @@
+#map  {
+  height: 100%;
+  width:75%;
+  left:25%;
+  position: absolute;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#formSide {
+  margin: 10px;
+  position: absolute;
+  width:20%;
+  left:0px;
+}
