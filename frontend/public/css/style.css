@@ -1,0 +1,39 @@
+
+html, body{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body > div{
+  height: 100%;
+  width: 100%;
+}
+
+input{
+  width: 100%;
+}
+
+table{
+  width: 100%;
+}
+
+#map{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 30%;
+}
+
+#side-bar{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 70%;
+  right: 0;
+  padding: 10px;
+}
+

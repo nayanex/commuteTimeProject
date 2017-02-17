@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="poc">
+
+<head>
+	<meta name="description" content="">
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Cache-control" content="public">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" media="screen" href="./css/style.css">
+	<title>POC</title>
+</head>
+
+<body ng-controller="pocController">
+	<div>
+		<div id="map">
+		</div>
+		<div id="side-bar">
+			<h6>Origin:</h6><input id="origin-input" placeholder="Enter the origin location" autocomplete="on" type="text">
+			<label id="origin"></label>
+			<input type="hidden" id="origin_lat" value="">
+			<input type="hidden" id="origin_lng" value="">
+			<br /><br />
+			<h6>Destination:</h6><input id="destination-input" placeholder="Enter the destination location" autocomplete="on" type="text">
+			<label id="destination"></label>
+			<input type="hidden" id="destination_lat" value="">
+			<input type="hidden" id="destination_lng" value="">
+			<br /><br />
+			<h6>Departure time:</h6>
+			<select id="dep_time-select">
+			 	<option value="" disabled selected>Select a departure time</option>
+			</select>
+			<br /><br />
+			<label id="commuteTime_label"></label>
+			<br /><br />
+			<table>
+				<tr>
+					<td><button class="btn btn-info", ng-click="reset()"> Reset route information </button></td>
+					<td><button class="btn btn-warning", ng-click="commuteTime()"> Calculate commute time </button></td>
+				</tr>
+			</table>
+
+
+			<br /><br />
+			<button class="btn btn-info", ng-click="mobilityMap()">Get Mobility Map</button>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+	<script type="text/javascript" src="./lib/chartjs/chart.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/components.js"></script>
+	<script type="text/javascript" src="./js/services.js"></script>
+	<script type="text/javascript" src="./js/controllers.js"></script>
+</body>
+
+</html>
